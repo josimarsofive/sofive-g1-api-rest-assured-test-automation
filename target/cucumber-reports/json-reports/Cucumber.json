@@ -1,0 +1,95 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2020-09-15T22:00:21.366Z",
+        "before": [
+          {
+            "result": {
+              "duration": 529000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sofive.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Registrar Cliente",
+        "description": "",
+        "id": "rest---reqres-rest-testing---register-client;registrar-cliente",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.sofive.Hooks.cleanUp()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 68000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "El sistema está listo para enviar una solicitud",
+            "match": {
+              "location": "com.sofive.stepdefs.CommonStepDefs.el_sistema_está_listo_para_enviar_una_solicitud()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 640000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "El sistema envía una solicitud para crear cliente de un servicio de reqres",
+            "match": {
+              "location": "com.sofive.stepdefs.register.CreateClientStepDefs.el_sistema_envía_una_solicitud_para_crear_cliente_de_un_servicio_de_reqres()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 40000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "El estado de respuesta debe ser 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 32
+                }
+              ],
+              "location": "com.sofive.stepdefs.CommonStepDefs.el_estado_de_respuesta_debe_ser(int)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ApiRestJson"
+          },
+          {
+            "name": "@ID_001"
+          }
+        ]
+      }
+    ],
+    "name": "REST - Reqres Rest Testing - Register Client",
+    "description": "",
+    "id": "rest---reqres-rest-testing---register-client",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/AS_1_RegisterClient.feature",
+    "tags": []
+  }
+]

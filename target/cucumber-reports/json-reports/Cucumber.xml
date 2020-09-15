@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="1.497">
+<testcase classname="REST - Reqres Rest Testing - Register Client" name="Registrar Cliente" time="1.345">
+<system-out><![CDATA[Given El sistema está listo para enviar una solicitud.......................passed
+When El sistema envía una solicitud para crear cliente de un servicio de reqres.passed
+Then El estado de respuesta debe ser 200....................................passed
+]]></system-out>
+</testcase>
+</testsuite>
